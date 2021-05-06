@@ -1,0 +1,9 @@
+{
+    "Create describe block": {
+        "prefix": "des",
+        "body": [
+            "describe('$1', () => {",
+            "});"
+        ]
+    }
+}
