@@ -2,7 +2,85 @@
     "Create describe block": {
         "prefix": "des",
         "body": [
-            "describe('$1', () => {",
+            "describe('${1:Testcase}', () => {",
+            "\tit('${2:Testname}', () => {",
+            "\t\t$0",
+            "\t});",
+            "});"
+        ]
+    },
+
+    "Create describe block with beforeAll": {
+        "prefix": "desba",
+        "body": [
+            "describe('${1:Testcase}', () => {",
+            "\tbeforeAll(() => {",
+            "\t\t$2",
+            "\t});",
+            "",
+            "\tit('${3:Testname}', () => {",
+            "\t\t$0",
+            "\t});",
+            "});"
+        ]
+    },
+
+    "Create describe block with beforeEach": {
+        "prefix": "desbe",
+        "body": [
+            "describe('${1:Testcase}', () => {",
+            "\beforeEach(() => {",
+            "\t\t$2",
+            "\t});",
+            "",
+            "\tit('${3:Testname}', () => {",
+            "\t\t$0",
+            "\t});",
+            "});"
+        ]
+    },
+
+    "Create it block": {
+        "prefix": "it",
+        "body": [
+            "it('${1:TestName}', () => {",
+            "\t$0",
+            "});"
+        ]
+    },
+
+    "Create beforeAll block": {
+        "prefix": "ba",
+        "body": [
+            "beforeAll(() => {",
+            "\t$0",
+            "});"
+        ]
+    },
+
+    "Create beforeEach block": {
+        "prefix": "be",
+        "body": [
+            "beforeEach(() => {",
+            "\t$0",
+            "});"
+        ]
+    },
+
+    "Create afterAll block": {
+        "prefix": "aa",
+        "body": [
+            "afterAll(() => {",
+            "\t$0",
+            "});"
+        ]
+    },
+
+    "Create afterEach block": {
+        "prefix": "ae",
+        "body": [
+            "afterEach(() => {",
+            "\t$0",
             "});"
         ]
     }
