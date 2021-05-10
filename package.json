@@ -3,6 +3,7 @@
 	"displayName": "fast-block",
 	"description": "Generate fast block",
 	"version": "0.0.1",
+	"publisher": "Wenting",
 	"engines": {
 		"vscode": "^1.55.0"
 	},
